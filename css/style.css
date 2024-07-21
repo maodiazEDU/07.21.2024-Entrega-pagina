@@ -3,8 +3,7 @@
 body {
     margin: 0;
     padding: 0;
-  }
-  
+}
 
 /* Estilos generales */
 body {
@@ -21,7 +20,7 @@ body {
     background-color: #DDF4FF;
 }
 
-/* Estilos del header */
+/* ESTILOS SECCION 1 */
 .principal {
     background-color: #DDF4FF;
     width: 100%;
@@ -30,7 +29,6 @@ body {
     max-height: 682px; /* limita el ancho a 1400px */
     display: flex; /* Activa el modo de diseño flexible */
     margin: 0 auto;
-
 }
 
 .left-column,
@@ -147,4 +145,131 @@ h4{
         width: 100%;
     height: auto;
     display: block;
+}
+
+/* ESTILOS SECCION 2 */
+
+.estadisticas {
+    width: 100%;
+    height: 18.33vw; /* Relaciona la altura con el ancho de la pantalla (47.2% del ancho) */
+    max-width: 1440px; /* limita el ancho a 1400px */
+    max-height: 264px; /* limita el ancho a 1400px */
+    display: flex; /* Activa el modo de diseño flexible */
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.contenedor-columnas{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.columna{
+    width: 238px;
+    height: 104px;
+    aspect-ratio: 104 / 238;
+}
+.estadistica-1 {
+    display: flex;
+    flex-direction: column;
+    font-weight: 700;
+    text-align: center;
+}
+
+.metricas {
+    color: #96BB7C;
+    letter-spacing: 0.2px;
+    font-size: 58px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-align: center;
+}
+
+.metricas-texto {
+    color: #252B42
+    letter-spacing: 0.2px;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-align: center;
+}
+
+/* ESTILOS SECCION 3 */
+
+.calidad-educacion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFF2F3;
+
+    width: 100%;
+    height: 50vw; /* Relaciona la altura con el ancho de la pantalla (47.2% del ancho) */
+    max-width: 1440px; /* limita el ancho a 1400px */
+    max-height: 720px; /* limita el ancho a 1400px */
+}
+
+.contenedor-educacion {
+    display: flex;
+    width: 100%;
+    max-width: 1050px;
+    max-height: 720px;
+    flex-direction: column;
+    padding: 80px 0;
+}
+
+.titulo-seccion {
+    color: #252b42;
+    letter-spacing: 0.2px;
+    margin-top: 80px;
+    font: 700 40px Montserrat, sans-serif;
+}
+
+.contenedor-tarjetas {
+    display: flex;
+    justify-content: center;
+    margin: 80px 0 48px;
+}
+
+.malla-tarjetas {
+    display: flex;
+    gap: 20px;
+}
+
+.tarjeta {
+    box-shadow: 0 13px 19px rgba(0, 0, 0, 0.07);
+    background-color: var(--light-background-color, #fff);
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    width: 100%;
+    padding: 35px 40px;
+}
+
+.icono {
+    aspect-ratio: 1;
+    object-fit: auto;
+    object-position: center;
+    width: 72px;
+}
+
+.titulo-ficha {
+    color: #252b42;
+    letter-spacing: 0.1px;
+    margin-top: 20px;
+    font: 700 16px/150% Montserrat, sans-serif;
+}
+
+.linea-roja {
+    background-color: #e74040;
+    margin-top: 20px;
+    width: 50px;
+    height: 2px;
+}
+
+.texto-tarjeta {
+    color: #737373;
+    letter-spacing: 0.2px;
+    margin-top: 20px;
+    font: 400 14px/20px Montserrat, sans-serif;
 }
