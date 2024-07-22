@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-
-/* 
+ 
 body {
     margin: 0;
     padding: 0;
@@ -45,7 +44,6 @@ body {
     max-width: 720px; /* Limita el ancho máximo a 720px */
     width: 100%; /* Ocupa el 100% del ancho disponible */
     max-height: 682px; 
-    
     aspect-ratio: 682 / 700;
 }
 
@@ -189,7 +187,7 @@ h4{
 }
 
 .metricas-texto {
-    color: #252B42
+    color: #252B42;
     letter-spacing: 0.2px;
     font-size: 16px;
     font-family: 'Montserrat', sans-serif;
@@ -224,7 +222,8 @@ h4{
     color: #252b42;
     letter-spacing: 0.2px;
     margin-top: 80px;
-    font: 700 40px Montserrat, sans-serif;
+    font: 700 40px Montserrat, sans-serif;  /* Forma abrefiava de agregar varias propiedades
+    sans-serif es la fuente de respaldo*/
     padding-left: 80px;
 }
 
