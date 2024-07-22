@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+/* 
 body {
     margin: 0;
     padding: 0;
@@ -15,7 +16,7 @@ body {
 
 .encabezado{
     width: 100%; /* Ocupa el 100% del ancho del body */
-    height: 6.94vw; /* Relaciona la altura con el ancho de la pantalla (7.14% del ancho) */
+    height: 6.94vw; /* Relaciona la altura con el ancho de la pantalla (6.94% del ancho) */
     max-height: 100px; /* Limita la altura máxima a 100px */
     background-color: #DDF4FF;
 }
@@ -24,26 +25,27 @@ body {
 .principal {
     background-color: #DDF4FF;
     width: 100%;
-    height: 47.36vw; /* Relaciona la altura con el ancho de la pantalla (47.2% del ancho) */
+    height: 47.36vw; /* Relaciona la altura con el ancho de la pantalla (47.36% del ancho) */
     max-width: 1440px; /* limita el ancho a 1400px */
-    max-height: 682px; /* limita el ancho a 1400px */
+    max-height: 682px; /* limita el alto a 682px */
     display: flex; /* Activa el modo de diseño flexible */
     margin: 0 auto;
 }
 
 .left-column,
 .right-column {
-    flex: 1;
+    flex: 1; /* Ambas columnas ocupan el mismo espacio */
 }
 
 .left-column {
     display: flex;
     align-items: center; /* Centra verticalmente el contenido */
     justify-content: flex-end; /* Alinea a la derecha el contenido */
-    background-color: #DDF4FF; /* Ajusta según sea necesario */
-    max-width: 720px; /* Ajusta según tus necesidades */
-    width: 100%;
-    max-height: 682px; /* Altura máxima */
+    background-color: #DDF4FF; 
+    max-width: 720px; /* Limita el ancho máximo a 720px */
+    width: 100%; /* Ocupa el 100% del ancho disponible */
+    max-height: 682px; 
+    
     aspect-ratio: 682 / 700;
 }
 
@@ -52,9 +54,9 @@ body {
     flex-direction: column;
     justify-content: space-between;
     background-color: #DDF4FF;
-    max-width: 573px; /* Ajusta según tus necesidades */
-    width: 100%;
-    max-height: 386px; /* Altura máxima */
+    max-width: 573px;
+    width: 100%; /* Ocupa el 100% del ancho disponible */
+    max-height: 386px;
     aspect-ratio: 573 / 386;
 }
 
@@ -65,9 +67,9 @@ h5{
 }
 
 .texto-h1{
-    max-width: 542px; /* Ajusta según tus necesidades */
+    max-width: 542px;
     width: 100%;
-    max-height: 160px; /* Altura máxima */
+    max-height: 160px;
     aspect-ratio: 160 / 542;
 }
 
@@ -87,13 +89,13 @@ h4{
 
 .botones{
     display: flex;
-    gap: 15px;
+    gap: 15px; /* Espacio entre los botones */
 }
 
 .boton-quote{
-    max-width: 195px; /* Ajusta según tus necesidades */
+    max-width: 195px;
     width: 100%;
-    max-height: 52px; /* Altura máxima */
+    max-height: 52px;
     aspect-ratio: 52 / 195;
     background-color: #96BB7C;
 
@@ -108,9 +110,9 @@ h4{
 }
 
 .boton-learn{
-    max-width: 195px; /* Ajusta según tus necesidades */
+    max-width: 195px;
     width: 100%;
-    max-height: 52px; /* Altura máxima */
+    max-height: 52px;
     aspect-ratio: 52 / 195;
     background-color: #DDF4FF;
 
@@ -123,22 +125,22 @@ h4{
     border-radius: 5px;
     border-width: 2px;
     border-color: #96BB7C;
-    border: solid;   
+    border: solid; /* Tipo de borde */
 }
 
 .right-column {
     display: flex;
-    background-color: #DDF4FF; /* Ajusta según sea necesario */
-    max-width: 720px; /* Ajusta según tus necesidades */
+    background-color: #DDF4FF;
+    max-width: 720px;
     width: 100%;
-    max-height: 682px; /* Altura máxima */
+    max-height: 682px;
     aspect-ratio: 682 / 720;
 }
 
 .imagen-contenido{
     display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
+    flex-direction: column; /* Ordena los elementos en columna */
+    justify-content: flex-end; /* Alinea los elementos al final */
 }
 
 .imagen-contenido img{
@@ -151,12 +153,12 @@ h4{
 
 .estadisticas {
     width: 100%;
-    height: 18.33vw; /* Relaciona la altura con el ancho de la pantalla (47.2% del ancho) */
-    max-width: 1440px; /* limita el ancho a 1400px */
-    max-height: 264px; /* limita el ancho a 1400px */
-    display: flex; /* Activa el modo de diseño flexible */
-    justify-content: center;
-    margin: 0 auto;
+    height: 18.33vw; /* Relaciona la altura con el ancho de la pantalla (18.33% del ancho) */
+    max-width: 1440px;
+    max-height: 264px;
+    display: flex;
+    justify-content: center; /* Centra el contenido horizontalmente */
+    margin: 0 auto; /* Centra la sección */
 }
 
 .contenedor-columnas{
@@ -238,8 +240,7 @@ h4{
 }
 
 .tarjeta {
-    box-shadow: 0 13px 19px rgba(0, 0, 0, 0.07);
-    background-color: var(--light-background-color, #fff);
+    background-color: #FFFFFF;
     display: flex;
     flex-grow: 1;
     flex-direction: column;
@@ -248,10 +249,10 @@ h4{
 }
 
 .icono {
-    aspect-ratio: 1;
-    object-fit: auto;
-    object-position: center;
-    width: 72px;
+    aspect-ratio: 1; /* Relación de aspecto cuadrada */
+    object-fit: auto; /* Ajuste de la imagen */
+    object-position: center; /* Posición de la imagen */
+    width: 72px; /* Ancho del icono */
 }
 
 .titulo-ficha {
@@ -306,7 +307,7 @@ h4{
 }
 
 .footer-texto {
-    color: var(--second-text-color, #737373);
+    color: #737373;
     letter-spacing: 0.2px;
     font: 700 14px/24px Montserrat, sans-serif;
 }
@@ -316,4 +317,4 @@ h4{
     justify-content: center;
     align-items: center;
     gap: 20px;
-  }
+}
